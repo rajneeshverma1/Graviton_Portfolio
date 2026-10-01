@@ -158,3 +158,4 @@ func main() {
 }
 // v2: HTTP server skeleton
 // v3: structs refined
+// v1.0.0 — production ready
