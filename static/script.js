@@ -210,3 +210,4 @@
 // v3: aria roles
 // v3: note content
 // v3: focus trap
+// v3: backdrop close
