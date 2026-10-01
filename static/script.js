@@ -204,3 +204,4 @@
 })();
 // v2: modal system
 // v3: parallax
+// v3: blink anim
