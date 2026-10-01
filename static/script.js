@@ -209,3 +209,4 @@
 // v3: keyboard nav
 // v3: aria roles
 // v3: note content
+// v3: focus trap
