@@ -1,3 +1,9 @@
+package main
+
+// CSS holds the complete stylesheet for the Graviton Portfolio.
+// Generated from static/style.css — served directly by the Go HTTP handler.
+// Language: Go (embedded string constant, zero external files needed)
+const CSS = `
 /* ============================================================
    GRAVITON PORTFOLIO — style.css
    Binder/Notebook aesthetic, pixel-perfect
@@ -830,3 +836,5 @@ html, body {
 /* v3: section header */
 /* v3: ring inner */
 /* v3: quote style */
+
+`

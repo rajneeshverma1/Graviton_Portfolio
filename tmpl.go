@@ -1,3 +1,10 @@
+package main
+
+// HTMLTemplate holds the complete Go html/template source for the portfolio page.
+// This is the binder/notebook two-page spread — left page (profile + work experience)
+// and right page (interactive sticky notes grid).
+// Rendered server-side by Go's html/template package with PortfolioData.
+const HTMLTemplate = `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -193,3 +200,5 @@
 <!-- v3: polaroid cluster -->
 <!-- v3: skills note -->
 <!-- v3: tech note -->
+
+`

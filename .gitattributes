@@ -1,0 +1,5 @@
+# Tell GitHub Linguist: images are binary/vendored — exclude from language breakdown
+static/images/* binary
+static/images/* linguist-vendored
+
+# This repo is pure Go — all text content (HTML/CSS/JS) lives in .go source files

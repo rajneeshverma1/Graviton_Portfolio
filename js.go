@@ -1,3 +1,9 @@
+package main
+
+// JS holds the complete client-side JavaScript for the Graviton Portfolio.
+// Generated from static/script.js — served directly by the Go HTTP handler.
+// Includes: sticky note modal, cursor parallax, blink animation, keyboard nav, a11y.
+const JS = `
 /* ============================================================
    GRAVITON PORTFOLIO — script.js
    Sticky note interactivity & modal system
@@ -11,19 +17,19 @@
     'note-work': {
       title: 'work',
       icon: '💼',
-      content: `
+      content: ` + "`" + `
         <p>Three startups, <strong>all remote</strong>, all building real products that ship.</p>
         <ul>
           <li><strong>Stealth Startup</strong> (Sep 2026 → Now) — Architecting Go microservices from scratch. 1,800+ commits in month one.</li>
           <li><strong>Amboras</strong> (Feb → Aug 2026, SF) — High-throughput Go APIs, 30k+ users, backed by YC & A*.</li>
           <li><strong>Dodge AI</strong> (Aug → Oct 2025, Bengaluru) — Full backend platform in Go for enterprise demos. Google, Accel & Antler backed.</li>
         </ul>
-      `,
+      ` + "`" + `,
     },
     'note-projects': {
       title: 'projects',
       icon: '📁',
-      content: `
+      content: ` + "`" + `
         <p>Open-source tools, side bets, and things I built because they didn't exist yet.</p>
         <ul>
           <li><strong>graviton</strong> — A lightweight Go HTTP framework with built-in observability.</li>
@@ -31,12 +37,12 @@
           <li><strong>dropzone-cli</strong> — Zero-config Go-based deploy pipeline for indie devs.</li>
         </ul>
         <p style="margin-top:10px; color:#888; font-size:11px;">More on GitHub →</p>
-      `,
+      ` + "`" + `,
     },
     'note-skills': {
       title: 'what I know',
       icon: '💡',
-      content: `
+      content: ` + "`" + `
         <ul>
           <li><strong>Go concurrency</strong> — goroutines, channels, sync primitives, race detection.</li>
           <li><strong>Distributed systems</strong> — consensus, eventual consistency, CAP trade-offs.</li>
@@ -45,12 +51,12 @@
           <li><strong>Infrastructure</strong> — Docker, Kubernetes, Terraform, CI/CD pipelines.</li>
           <li><strong>Observability</strong> — OpenTelemetry, Prometheus, Grafana, structured logging.</li>
         </ul>
-      `,
+      ` + "`" + `,
     },
     'note-tech': {
       title: 'tech I use',
       icon: '💻',
-      content: `
+      content: ` + "`" + `
         <ul>
           <li>🐹 <strong>Go (Golang)</strong> — primary language, daily driver</li>
           <li>🐘 <strong>PostgreSQL</strong> — relational DB of choice</li>
@@ -61,12 +67,12 @@
           <li>🌐 <strong>Next.js</strong> — frontend when I have to</li>
           <li>📡 <strong>OpenTelemetry</strong> — distributed tracing</li>
         </ul>
-      `,
+      ` + "`" + `,
     },
     'note-notes': {
       title: 'notes',
       icon: '✏️',
-      content: `
+      content: ` + "`" + `
         <p>Things I'm thinking about:</p>
         <ul>
           <li>Why most startups still ship monoliths masquerading as microservices.</li>
@@ -74,12 +80,12 @@
           <li>Go's simplicity is its superpower — resist the urge to abstract everything.</li>
           <li>Writing is thinking. Write more docs, even for yourself.</li>
         </ul>
-      `,
+      ` + "`" + `,
     },
     'note-sayhi': {
       title: 'say hi',
       icon: '✈️',
-      content: `
+      content: ` + "`" + `
         <p>I read every message. Drop me a line:</p>
         <ul>
           <li>📧 <strong>Email</strong> — sanatan@example.com</li>
@@ -88,7 +94,7 @@
           <li>🐦 <strong>X / Twitter</strong> — @sanatan_dev</li>
         </ul>
         <p style="margin-top:12px; font-style:italic; color:#888;">Best for: collaborations, Go/backend consulting, or just geeking out about distributed systems.</p>
-      `,
+      ` + "`" + `,
     },
   };
 
@@ -170,7 +176,7 @@
       const dy  = (e.clientY - cy) / cy;
       const rx  =  dy * 1.8;
       const ry  = -dx * 1.8;
-      binder.style.transform = `perspective(1800px) rotateX(${rx}deg) rotateY(${ry}deg)`;
+      binder.style.transform = ` + "`" + `perspective(1800px) rotateX(${rx}deg) rotateY(${ry}deg)` + "`" + `;
       ticking = false;
     });
   });
@@ -187,7 +193,7 @@
     // Wrap "today" with a blinking span
     quote.innerHTML = text.replace('today.', '<span class="blink-word">today.</span>');
     const style = document.createElement('style');
-    style.textContent = `
+    style.textContent = ` + "`" + `
       .blink-word {
         animation: blink-anim 1.4s step-start infinite;
         color: #c0392b;
@@ -197,7 +203,7 @@
         0%, 100% { opacity: 1; }
         50%       { opacity: 0; }
       }
-    `;
+    ` + "`" + `;
     document.head.appendChild(style);
   })();
 
@@ -212,3 +218,5 @@
 // v3: focus trap
 // v3: backdrop close
 // v3: rAF parallax
+
+`
