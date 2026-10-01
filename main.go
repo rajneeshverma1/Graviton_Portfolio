@@ -157,3 +157,4 @@ func main() {
 	}
 }
 // v2: HTTP server skeleton
+// v3: structs refined
