@@ -1,0 +1,18 @@
+# Go binary
+gravitonportfolio
+*.exe
+*.out
+
+# Go build cache
+/vendor/
+*.sum
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo

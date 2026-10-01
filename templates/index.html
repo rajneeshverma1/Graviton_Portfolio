@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{{.Name.First}} {{.Name.Last}} — Portfolio</title>
+  <meta name="description" content="{{.Name.First}} {{.Name.Last}} — {{.Bio}}"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Reenie+Beanie&family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Space+Mono:wght@400;700&family=Permanent+Marker&family=Patrick+Hand&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+
+<div class="desk-bg"><div class="grid-overlay"></div></div>
+
+<div class="binder-wrapper">
+
+  <!-- Left cover edge -->
+  <div class="binder-cover-edge left-edge"></div>
+
+  <!-- Spine with rings -->
+  <div class="binder-spine">
+    <div class="ring-group">
+      <div class="ring"><div class="ring-inner"></div></div>
+      <div class="ring"><div class="ring-inner"></div></div>
+      <div class="ring"><div class="ring-inner"></div></div>
+      <div class="ring"><div class="ring-inner"></div></div>
+    </div>
+    <div class="spine-label">antigravity</div>
+  </div>
+
+  <!-- ===== LEFT PAGE p.01 ===== -->
+  <div class="page page-left" id="page-01">
+
+    <!-- Polaroid cluster -->
+    <div class="polaroid-cluster">
+      <div class="polaroid main-polaroid">
+        <div class="tape tape-left"></div>
+        <div class="tape tape-right"></div>
+        <div class="polaroid-img-wrap">
+          <img src="/static/images/polaroid_skyline.png" alt="Night city skyline" class="polaroid-img"/>
+        </div>
+        <div class="polaroid-caption">every window &middot; a day of my last year</div>
+      </div>
+      <div class="polaroid mini-polaroid">
+        <div class="mini-tape"></div>
+        <div class="polaroid-img-wrap mini-img-wrap">
+          <div class="mini-placeholder"><span class="mini-emoji">🌙</span></div>
+        </div>
+        <div class="polaroid-caption small-caption">me</div>
+      </div>
+    </div>
+
+    <p class="skyline-quote">"every window is a day of my last year.<br/>the blinking one is today."</p>
+
+    <!-- Name block -->
+    <div class="name-block">
+      <h1 class="name-line">
+        <span class="name-bold">{{.Name.First}}</span>
+        <span class="name-cursive">{{.Name.Last}}</span>
+      </h1>
+      <p class="bio-line">{{.Bio}}</p>
+      <div class="status-line">
+        {{if .Status.Live}}<span class="status-dot"></span>{{end}}
+        <span class="status-text">{{.Status.Label}}</span>
+      </div>
+    </div>
+
+    <!-- Work section -->
+    <div class="section-header">
+      <div class="section-title-row">
+        <span class="section-label">Work</span>
+        <span class="section-subtitle">3 STARTUPS</span>
+        <div class="sticker-tag">CLASSIC - FREE</div>
+      </div>
+    </div>
+
+    <div class="work-list">
+      {{range .Experience}}
+      <div class="work-item">
+        <div class="work-item-header">
+          <div class="work-company-dot{{if .IsCurrent}} active-dot{{end}}"></div>
+          <div class="work-info">
+            <div class="work-name-row">
+              <span class="work-company">{{.Company}}</span>
+              <span class="work-role">&mdash; {{.Role}}</span>
+            </div>
+            <div class="work-date-row">
+              <span class="work-date">{{.Dates}} &bull; {{.Location}}</span>
+              {{range .Badges}}<span class="badge {{.Class}}">{{.Label}}</span>{{end}}
+              {{if .BackedBy}}<span class="backed-tag">{{.BackedBy}}</span>{{end}}
+            </div>
+          </div>
+        </div>
+        <p class="work-desc">{{.Description}}</p>
+      </div>
+      {{end}}
+    </div>
+
+    <!-- Footer links -->
+    <div class="page-footer-links">
+      {{range .Links}}
+      <a href="{{.URL}}" class="footer-link" id="{{.ID}}">&#8599; {{.Label}}</a>
+      {{end}}
+    </div>
+
+    <div class="page-bottom">
+      <div class="antigravity-badge">antigravity</div>
+      <div class="page-number">p. 01</div>
+    </div>
+
+  </div><!-- /page-left -->
+
+  <!-- ===== RIGHT PAGE p.02 ===== -->
+  <div class="page page-right" id="page-02">
+
+    <!-- Sticky notes grid -->
+    <div class="sticky-grid">
+      {{range .Notes}}
+      <div class="sticky-note {{.Class}}" data-page="{{.PageNum}}" id="{{.ID}}" tabindex="0" role="button" aria-label="Open {{.Title}} section, {{.PageNum}}">
+        {{if .HasClip}}
+        <div class="paperclip" aria-hidden="true">
+          <svg width="26" height="46" viewBox="0 0 26 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 3 C13 3 4 3 4 14 L4 34 C4 40 9 44 13 44 C17 44 22 40 22 34 L22 13 C22 9.5 19.5 7 17 7 C14.5 7 12 9.5 12 13 L12 33 C12 35 13 36 13 36 C13 36 14 35 14 33 L14 13" stroke="#a0a8b0" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
+        {{end}}
+        <div class="note-page-num">{{.PageNum}}</div>
+        <div class="note-icon">{{.Icon}}</div>
+        <div class="note-title">{{.Title}}</div>
+        {{if .SubText}}<div class="note-subtext">{{.SubText}}</div>{{end}}
+        <div class="note-lines">
+          <div class="note-line"></div>
+          <div class="note-line"></div>
+          <div class="note-line short-line"></div>
+        </div>
+      </div>
+      {{end}}
+    </div>
+
+    <!-- Van Gogh sticker + annotation -->
+    <div class="vangogh-area">
+      <img src="/static/images/van_gogh_sticker.png" alt="Van Gogh portrait sticker" class="vangogh-sticker"/>
+      <div class="vangogh-annotation">&larr; pick a note.</div>
+    </div>
+
+    <!-- Great Wave polaroid -->
+    <div class="wave-polaroid">
+      <div class="wave-tape"></div>
+      <img src="/static/images/great_wave.png" alt="The Great Wave off Kanagawa" class="wave-img"/>
+      <div class="wave-caption">神奈川沖浪裏 &middot; Hokusai</div>
+    </div>
+
+    <!-- Decorative pen -->
+    <div class="decorative-pen" aria-hidden="true">
+      <div class="pen-cap"></div>
+      <div class="pen-body">
+        <div class="pen-clip"></div>
+        <div class="pen-engraving">antigravity</div>
+      </div>
+      <div class="pen-grip"></div>
+      <div class="pen-tip"></div>
+    </div>
+
+    <div class="page-bottom right-bottom">
+      <div class="page-number">p. 02</div>
+    </div>
+
+  </div><!-- /page-right -->
+
+  <!-- Right cover edge -->
+  <div class="binder-cover-edge right-edge"></div>
+
+</div><!-- /binder-wrapper -->
+
+<!-- Note expand modal -->
+<div class="note-modal" id="noteModal" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="note-modal-backdrop" id="modalBackdrop"></div>
+  <div class="note-modal-card">
+    <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+    <div class="modal-page-num" id="modalPageNum"></div>
+    <div class="modal-icon" id="modalIcon"></div>
+    <div class="modal-title" id="modalTitle"></div>
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
