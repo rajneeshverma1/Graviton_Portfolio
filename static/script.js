@@ -206,3 +206,4 @@
 // v3: parallax
 // v3: blink anim
 // v3: modal tint
+// v3: keyboard nav
