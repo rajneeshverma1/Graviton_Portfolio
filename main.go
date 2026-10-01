@@ -156,3 +156,4 @@ func main() {
 		log.Fatalf("server error: %v", err)
 	}
 }
+// v2: HTTP server skeleton
