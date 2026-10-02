@@ -724,3 +724,4 @@ html, body {
 // live pulse dot v2
 // work section v2
 // snote grid v2
+// snote hover v2
