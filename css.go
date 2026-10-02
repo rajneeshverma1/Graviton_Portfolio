@@ -723,3 +723,4 @@ html, body {
 // bio strikethrough v2
 // live pulse dot v2
 // work section v2
+// snote grid v2
