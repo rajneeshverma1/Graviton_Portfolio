@@ -269,3 +269,4 @@ const HTMLTemplate = `
 </html>
 `
 // doodle icons v2
+// paperclip svg v2
