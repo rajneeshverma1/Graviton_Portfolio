@@ -746,3 +746,4 @@ html, body {
 /* footer links v2 */
 /* pick note label v2 */
 /* wave polaroid v2 */
+/* side pen v2 */
