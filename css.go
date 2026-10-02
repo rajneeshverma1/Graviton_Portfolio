@@ -734,3 +734,4 @@ html, body {
 /* diamond grid texture v2 */
 /* ring gradient v2 */
 /* polaroid main v2 */
+/* polaroid mini v2 */
