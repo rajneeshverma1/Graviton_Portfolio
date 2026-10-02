@@ -718,3 +718,4 @@ html, body {
 // warm sandy desk v2
 // teal cover grid v2
 // metallic rings v2
+// polaroid cluster v2
