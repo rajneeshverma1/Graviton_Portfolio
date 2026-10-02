@@ -277,3 +277,4 @@ const HTMLTemplate = `
 <!-- lightbulb svg v2 -->
 <!-- laptop svg v2 -->
 <!-- pencil svg v2 -->
+<!-- paper plane svg v2 -->
