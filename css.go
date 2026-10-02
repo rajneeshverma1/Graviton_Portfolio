@@ -720,3 +720,4 @@ html, body {
 // metallic rings v2
 // polaroid cluster v2
 // name typography v2
+// bio strikethrough v2
