@@ -273,3 +273,4 @@ const HTMLTemplate = `
 // marble bust v2
 <!-- plant shadow svg v2 -->
 <!-- briefcase svg v2 -->
+<!-- folder svg v2 -->
