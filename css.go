@@ -725,3 +725,4 @@ html, body {
 // work section v2
 // snote grid v2
 // snote hover v2
+// pick note label v2
