@@ -272,3 +272,4 @@ const HTMLTemplate = `
 // paperclip svg v2
 // marble bust v2
 <!-- plant shadow svg v2 -->
+<!-- briefcase svg v2 -->
