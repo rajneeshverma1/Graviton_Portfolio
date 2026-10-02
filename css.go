@@ -729,3 +729,4 @@ html, body {
 // wave polaroid v2
 // modal spring v2
 // blink today v2
+/* book-open flip v2 */
