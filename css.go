@@ -744,3 +744,4 @@ html, body {
 /* work entry border v2 */
 /* badge chips v2 */
 /* footer links v2 */
+/* pick note label v2 */
