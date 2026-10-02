@@ -740,3 +740,4 @@ html, body {
 /* name-last red v2 */
 /* bio strike v2 */
 /* live dot v2 */
+/* classic tag v2 */
