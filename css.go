@@ -741,3 +741,4 @@ html, body {
 /* bio strike v2 */
 /* live dot v2 */
 /* classic tag v2 */
+/* work entry border v2 */
