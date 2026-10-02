@@ -719,3 +719,4 @@ html, body {
 // teal cover grid v2
 // metallic rings v2
 // polaroid cluster v2
+// name typography v2
