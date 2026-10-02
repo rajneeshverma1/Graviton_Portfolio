@@ -226,3 +226,4 @@ func main() {
 	}
 }
 
+// refactor: typed structs v2
