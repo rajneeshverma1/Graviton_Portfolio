@@ -745,3 +745,4 @@ html, body {
 /* badge chips v2 */
 /* footer links v2 */
 /* pick note label v2 */
+/* wave polaroid v2 */
