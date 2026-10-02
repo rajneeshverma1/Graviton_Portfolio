@@ -717,3 +717,4 @@ html, body {
 // book-open anim v2
 // warm sandy desk v2
 // teal cover grid v2
+// metallic rings v2
