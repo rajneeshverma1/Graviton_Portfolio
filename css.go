@@ -722,3 +722,4 @@ html, body {
 // name typography v2
 // bio strikethrough v2
 // live pulse dot v2
+// work section v2
