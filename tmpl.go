@@ -268,3 +268,4 @@ const HTMLTemplate = `
 </body>
 </html>
 `
+// doodle icons v2
