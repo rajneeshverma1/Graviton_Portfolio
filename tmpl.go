@@ -278,3 +278,4 @@ const HTMLTemplate = `
 <!-- laptop svg v2 -->
 <!-- pencil svg v2 -->
 <!-- paper plane svg v2 -->
+<!-- paperclip v2 -->
