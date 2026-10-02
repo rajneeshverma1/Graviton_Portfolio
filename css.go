@@ -714,3 +714,4 @@ html, body {
 ::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.13); border-radius: 3px; }
 
 `
+// book-open anim v2
