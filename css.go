@@ -735,3 +735,4 @@ html, body {
 /* ring gradient v2 */
 /* polaroid main v2 */
 /* polaroid mini v2 */
+/* tape strips v2 */
