@@ -732,3 +732,4 @@ html, body {
 /* book-open flip v2 */
 /* desk radial gradient v2 */
 /* diamond grid texture v2 */
+/* ring gradient v2 */
