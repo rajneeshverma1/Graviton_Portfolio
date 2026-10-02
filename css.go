@@ -743,3 +743,4 @@ html, body {
 /* classic tag v2 */
 /* work entry border v2 */
 /* badge chips v2 */
+/* footer links v2 */
