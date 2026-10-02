@@ -274,3 +274,4 @@ const HTMLTemplate = `
 <!-- plant shadow svg v2 -->
 <!-- briefcase svg v2 -->
 <!-- folder svg v2 -->
+<!-- lightbulb svg v2 -->
