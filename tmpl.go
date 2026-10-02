@@ -275,3 +275,4 @@ const HTMLTemplate = `
 <!-- briefcase svg v2 -->
 <!-- folder svg v2 -->
 <!-- lightbulb svg v2 -->
+<!-- laptop svg v2 -->
