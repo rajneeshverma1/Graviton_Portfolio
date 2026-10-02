@@ -726,3 +726,4 @@ html, body {
 // snote grid v2
 // snote hover v2
 // pick note label v2
+// wave polaroid v2
