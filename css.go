@@ -728,3 +728,4 @@ html, body {
 // pick note label v2
 // wave polaroid v2
 // modal spring v2
+// blink today v2
